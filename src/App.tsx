@@ -102,7 +102,7 @@ export default function App() {
           {features.map((f) => (
             <div
               key={f.name}
-              className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 hover:border-white/20 hover:bg-white/[0.06] transition-all"
+              className="bg-white/ border3 border-white/10 rounded-2xl p-6 hover:border-white/20 hover:bg-white/6 transition-all"
             >
               <div className="text-2xl mb-3">{f.icon}</div>
               <div className="text-white font-semibold text-sm mb-1">{f.name}</div>
@@ -116,10 +116,10 @@ export default function App() {
       <section className="relative z-10 px-6 py-20 max-w-3xl mx-auto">
         <p className="text-center text-xs tracking-widest text-white/20 uppercase mb-12">How it works</p>
         <div className="flex flex-col gap-4">
-          {steps.map((s, i) => (
+          {steps.map((s) => (
             <div
               key={s.number}
-              className="flex items-center gap-6 bg-white/[0.03] border border-white/10 rounded-2xl px-8 py-6 hover:border-white/20 transition-all"
+              className="flex items-center gap-6 bg-white/3 border border-white/10 rounded-2xl px-8 py-6 hover:border-white/20 transition-all"
             >
               <span className="text-white/10 text-4xl font-bold shrink-0">{s.number}</span>
               <div className="flex-1 min-w-0">
