@@ -7,10 +7,10 @@ const steps = [
 ];
 
 const features = [
-  { icon: "⚛", name: "React 19", desc: "Latest React with fast refresh" },
-  { icon: "🔷", name: "TypeScript", desc: "Full type safety out of the box" },
-  { icon: "🎨", name: "Tailwind CSS v4", desc: "Utility-first styling, zero config" },
-  { icon: "⚡", name: "Vite", desc: "Lightning fast dev server & builds" },
+  { icon: "./public/icons/react.svg", name: "React 19", desc: "Latest React with fast refresh" },
+  { icon: "./public/icons/typescript.svg", name: "TypeScript", desc: "Full type safety out of the box" },
+  { icon: "./public/icons/tailwind.svg", name: "Tailwind CSS v4", desc: "Utility-first styling, zero config" },
+  { icon: "./public/icons/vite.svg", name: "Vite", desc: "Lightning fast dev server & builds" },
 ];
 
 export default function App() {
@@ -102,9 +102,9 @@ export default function App() {
           {features.map((f) => (
             <div
               key={f.name}
-              className="bg-white/ border3 border-white/10 rounded-2xl p-6 hover:border-white/20 hover:bg-white/6 transition-all"
+              className="bg-white/3 border border-white/10 rounded-2xl p-6 hover:border-white/20 hover:bg-white/6 transition-all"
             >
-              <div className="text-2xl mb-3">{f.icon}</div>
+              <img className="w-12 h-12 mb-3" src={f.icon} alt={`${f.name} icon`} />
               <div className="text-white font-semibold text-sm mb-1">{f.name}</div>
               <div className="text-white/30 text-xs leading-relaxed">{f.desc}</div>
             </div>
