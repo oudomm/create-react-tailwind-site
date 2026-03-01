@@ -7,10 +7,10 @@ const steps = [
 ];
 
 const features = [
-  { icon: "./public/icons/react.svg", name: "React 19", desc: "Latest React with fast refresh" },
-  { icon: "./public/icons/typescript.svg", name: "TypeScript", desc: "Full type safety out of the box" },
-  { icon: "./public/icons/tailwind.svg", name: "Tailwind CSS v4", desc: "Utility-first styling, zero config" },
-  { icon: "./public/icons/vite.svg", name: "Vite", desc: "Lightning fast dev server & builds" },
+  { icon: "/icons/react.svg", name: "React 19", desc: "Latest React with fast refresh" },
+  { icon: "/icons/typescript.svg", name: "TypeScript", desc: "Full type safety out of the box" },
+  { icon: "/icons/tailwind.svg", name: "Tailwind CSS v4", desc: "Utility-first styling, zero config" },
+  { icon: "/icons/vite.svg", name: "Vite", desc: "Lightning fast dev server & builds" },
 ];
 
 export default function App() {
